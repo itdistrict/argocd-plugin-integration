@@ -1,0 +1,16 @@
+
+- !host
+  id: argocd-repo-server
+  annotations:
+    authn-k8s/namespace: argocd
+    authn-k8s/deployment: argocd-repo-server
+   
+- !grant
+  roles:
+  - !group conjur/authn-k8s/conjur-lab/consumers
+  members:
+  - !host argocd-repo-server
+  
+- !grant
+  role: !group secrets/consumers
+  member: !host argocd-repo-server
