@@ -1,6 +1,6 @@
 apiVersion: v1
 data:
-  AVP_AUTH_TYPE: token
+  AVP_AUTH_TYPE: apiKey
   AVP_CONJUR_ACCOUNT: default
   AVP_CONJUR_API_KEY: 31hh9fv2n0r8m11te296m1etqss34733ssfmkfvm12qqmrk3cwd778
   AVP_CONJUR_HOST: host/argocd-plugin
